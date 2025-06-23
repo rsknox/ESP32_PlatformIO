@@ -1,3 +1,4 @@
+
 #include <Arduino.h>
 #include <Wire.h>
 #include <U8g2lib.h>
@@ -10,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-  int myNumber = 99887766;
+  int myNumber = 99;
   char buff[60];             // Make sure it's large enough for your integer
   itoa(myNumber, buff, 10);  // Convert int to string (base 10)
   u8g2.clearBuffer();                // Clear internal memory
